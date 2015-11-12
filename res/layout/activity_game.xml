@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/game"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ImageView
+        android:id="@+id/boat2"
+        android:layout_width="fill_parent"
+        android:scaleType="fitXY"
+        android:layout_marginBottom="-3500px" 
+        android:layout_height="3500px"
+        android:src="@drawable/game_background"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="120sp" />
+
+    <ImageView
+        android:id="@+id/boat10"
+        android:layout_width="35dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="-3500px"
+        android:scaleType="centerCrop"
+
+        android:src="@drawable/game_car" />
+
+    <TextView
+        android:id="@+id/score1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button"
+        android:gravity="center"
+        android:text="Punkty: 0"
+        android:textSize="25sp" />
+
+</RelativeLayout>
